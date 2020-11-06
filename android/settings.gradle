@@ -1,0 +1,5 @@
+rootProject.name = 'demo'
+include ':@mokriya_react-native-zoom-us-bridge', ':mobilertc', ':commonlib'
+project(':@mokriya_react-native-zoom-us-bridge').projectDir = new File(rootProject.projectDir, '../node_modules/@mokriya/react-native-zoom-us-bridge/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
